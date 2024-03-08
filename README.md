@@ -1,53 +1,27 @@
-# Custom-Map-Plotter
+# Map Plotter
 
-## Description
+This project is a web application that allows users to plot points on a map using city and state information. The application is built with JavaScript, Express, and Sequelize, and uses a MySQL database for storing location data.
 
-Can plot multiple points at once on a custom map of the US with a CSV file.
+## Getting Started
 
-https://hyrumsdolan.github.io/Custom-Map-Plotter/
+To get started with this project, clone the repository and install the dependencies:
 
-## Resources
+```bash
+git clone <repository-url>
+cd csv-map-plotter
+npm install
+'''
 
-### Map Source
+Update the `example.env` and rename it to `.env`
 
-[https://mapsvg.com/maps/usa](https://mapsvg.com/maps/usa)
+Run `npm seed` to intialize the database and test with seed data
 
-This has a downloadable SVG of the US. Ignore the $50 Buy Now, that's just for the API.
-Hit "Download the Map of USA"
+Run `npm start` and open on `http://localhost:3000`
 
-The file is an SVG and will look like garbage unless specifically used with an SVG editor.
+##Usage
+For single location plotting, enter the city and state in the input fields and click the "Plot" button. 
+For multiple location plotting, upload a CSV file with the city and state information and click the "Plot" button.
+note: This was developed for a personal use case, expecting the headers to be in "city, state" format. This can be edited in the the public/js/index.js file.
 
-### SVG Editor
-
-[https://boxy-svg.com/](https://boxy-svg.com/)
-
-This will allow for you to add borders (add stroke with Type:Solid option) to the states and change each states indivdual colors (shift clicking allows for batch changes)
-
-This one worked out really well for me. The only issue I had was text size (for some reason it won't got below 15), how ever I realized after that you can just make the map bigger and the relative text size is smaller.
-
-
-## Current Known Issues
-
-### Not tested fully yet, but I assume my JSON may be missing some possible spellings of cities and may cause issues.
-
-## Desired Next Steps
-
-### 1. Size slider and color editor for marker
-
-
-
-
-
-
-## API - DEPRECATED *
-
-[https://www.openstreetmap.org/](https://www.openstreetmap.org/)
-
-No API token required.
-
-I needed this for batches of 30-50 - this option is free, but may have some limitations for bigger datasets.
-
-Deprecation Note* I got blocked from the API, I think from reusing the same test file multiple times. I replaced this with a JSON which is much faster, but less robust if your City, State isn't already standardized.
-# CompHealth-Job-Board-Server
-# CompHealth-Job-Board-Server
-# CompHealth-Job-Board-Server
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
