@@ -19,9 +19,11 @@ Run `npm seed` to intialize the database and test with seed data
 Run `npm start` and open on `http://localhost:3000`
 
 ##Usage
+
 For single location plotting, enter the city and state in the input fields and click the "Plot" button. 
 For multiple location plotting, upload a CSV file with the city and state information and click the "Plot" button.
 note: This was developed for a personal use case, expecting the headers to be in "city, state" format. This can be edited in the the public/js/index.js file.
 
 ## License
+
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
