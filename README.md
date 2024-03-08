@@ -18,7 +18,7 @@ Run `npm seed` to intialize the database and test with seed data
 
 Run `npm start` and open on `http://localhost:3000`
 
-##Usage
+## Usage
 
 For single location plotting, enter the city and state in the input fields and click the "Plot" button. 
 For multiple location plotting, upload a CSV file with the city and state information and click the "Plot" button.
