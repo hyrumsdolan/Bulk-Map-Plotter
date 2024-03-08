@@ -7,7 +7,7 @@ This project is a web application that allows users to plot points on a map usin
 To get started with this project, clone the repository and install the dependencies:
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:hyrumsdolan/CSV-Map-Plotter.git
 cd csv-map-plotter
 npm install
 ```
