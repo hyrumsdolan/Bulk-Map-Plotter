@@ -1,0 +1,108 @@
+/* Global styles */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+/* Map styles */
+#map {
+    position: relative;
+    background-image: url('./Images/IMLC-Map.png'); 
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/* Marker styles */
+.marker {
+    background-color:#cce5ff;
+    opacity: .7; 
+    border-radius: 50%; /* Circular shape */
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    border: 3px solid black; /* White border for contrast */
+    box-shadow: 0 0 8px rgba(0,0,0,0.3); /* Soft shadow for depth */
+}
+
+.marker-text {
+    color: black;
+    font-weight: 900;
+}
+
+
+/* Form styles */
+input[type="text"] {
+    padding: 10px;;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Drop zone styles */
+#dropZone {
+    border: 2px dashed #007bff; /* Blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 40px;
+    text-align: center;
+    background-color: #f8f9fa; /* Light gray background */
+    color: #495057; /* Dark text for contrast */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative; /* For positioning inner elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#dropZone:hover {
+    background-color: #e2e6ea; /* Slightly darker on hover */
+    border-color: #0056b3; /* Darker border on hover */
+}
+
+#dropZone.dragover {
+    background-color: #cce5ff; /* Light blue when dragging over */
+    border-color: #007bff; /* Blue border on drag over */
+}
+
+#dropZone p {
+    margin: 10px 0 0;
+    color: #6c757d; /* Subtle text color */
+}
+
+#dropZone::before {
+    content: ''; /* File folder emoji as icon */
+    font-size: 48px; /* Large icon size */
+    position: absolute;
+    top: 20px;
+}
+
+#csvFileInput {
+    display: none; /* Hide the actual file input */
+}
+

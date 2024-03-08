@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map Plotter</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <h1>Map Plotter</h1>
+    <div id="map"></div>
+    <input type="text" id="city" placeholder="City" />
+    <input type="text" id="state" placeholder="State" />
+    <form id="mapForm">
+      <button type="submit">Add Point</button>
+    </form>
+
+    <div
+      id="dropZone"
+      style="border: 2px dashed #ccc; padding: 20px; text-align: center"
+    >
+      Drag and drop your CSV file within dotted box, or click to select a file.
+      <input
+        type="file"
+        id="csvFileInput"
+        accept=".csv"
+        style="display: none"
+      />
+    </div>
+    <button id="exportButton">Export as Image</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script type="module" src="./assets/JS/scripts.js"></script>
+  </body>
+</html>
