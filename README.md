@@ -10,7 +10,7 @@ To get started with this project, clone the repository and install the dependenc
 git clone <repository-url>
 cd csv-map-plotter
 npm install
-'''
+```
 
 Update the `example.env` and rename it to `.env`
 
